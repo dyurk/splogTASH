@@ -1,0 +1,26 @@
+{
+    "lucene": {
+        "/data/syslog/current/web/info.log": "web_info_log AND",
+        "/data/syslog/current/web/access.log": "web_access_log AND",
+        "/data/syslog/current/web/error.log": "web_error_log AND",
+        "/data/syslog/current/gcluster/gearmanmanager.log": "gearman_gcluster_log AND",
+        "/data/syslog/current/gcluster/gearmaninfo.log": "gearman_gcluster_info AND",
+        "/data/syslog/current/apphost/info.log": "apphost_info_log AND",
+        "/data/syslog/current/apphost/error.log": "apphost_error_log AND",
+        "/data/syslog/current/apphost/access.log": "apphost_info_log AND",
+        "/data/syslog/current/web-misc/info.log": "web-misc_info_log AND",
+        "/data/syslog/current/web-misc/error.log": "web-misc_error_log AND",
+        "/data/syslog/current/web-misc/access.log": "web-misc_info_log AND",
+        "/data/syslog/current/stats/top-keys.log": "stats_log AND",
+        "source=": "type:",
+        "uri=": "request_uri:",
+        "uri_path=": "request_uri:",
+        "http_response=": "reponse:",
+        "=": ":"
+    },
+    "pre_lucene": {
+        "| where eventcount >": "min_doc_count:",
+        "transaction ": " agg:terms field:",
+        "stats count by ": "  agg:stats field:"
+    }
+}

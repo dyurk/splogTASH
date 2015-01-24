@@ -1,0 +1,14 @@
+<center>
+<form action="/search" method="post">
+<input class="form-control input-lg" type="text"  name='query' value='<%= @query %>'>
+<button class="btn btn-success btn-lg btn-block" type="submit">Go</button>
+</form>
+
+<div class="panel panel-success">
+  <div class="panel-body">
+<pre> <a href="https://kibana.initech.com/#/dashboard/file/logstash.json?from=5m&query=<%= h @escaped_input %>"><%= @input %></a></pre>
+  </div>
+</div>
+
+<h4><small>ENTER SPLUNK QUERY. CLICK GO. TEST QUERY ON KIBANA.</small></h4>
+</center>
