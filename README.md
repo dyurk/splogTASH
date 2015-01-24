@@ -7,5 +7,5 @@ A simple SPL (Search Processing Language) to Lucene translator
 
 ## Screentshot
 
-![alt text](https://github.com/dyurk/splogtash/raw/public/splogtash_screenshot.png "SplogTASH example")
+![alt text](https://raw.githubusercontent.com/dyurk/splogtash/master/public/splogstash_screenshot.png "SplogTASH example")
 
